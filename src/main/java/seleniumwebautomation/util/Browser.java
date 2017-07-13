@@ -3,7 +3,7 @@ package seleniumwebautomation.util;
 /*
  * Bean representing a browser. It contains name, version and platform fields.
  * 
- * @author Sebastiano Armeli-Battana
+ * @author Hassene Bouraoui
  */
 public class Browser {
 

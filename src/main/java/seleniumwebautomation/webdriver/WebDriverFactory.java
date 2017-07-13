@@ -22,7 +22,7 @@ import seleniumwebautomation.webdriver.AuthenticatedHtmlUnitDriver;
 /*
  * Factory to instantiate a WebDriver object. It returns an instance of the driver (local invocation) or an instance of RemoteWebDriver
  * 
- * @author Sebastiano Armeli-Battana
+ * @author Hassene Bouraoui
  */
 public class WebDriverFactory {
 

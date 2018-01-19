@@ -20,9 +20,7 @@ public abstract class Page {
 		this.webDriver = webDriver;
 	}
 
-	public WebDriver getWebDriver() {
-		return webDriver;
-	}
+	public WebDriver getWebDriver() {return webDriver; }
 
 	public String getTitle() {
 		return webDriver.getTitle();

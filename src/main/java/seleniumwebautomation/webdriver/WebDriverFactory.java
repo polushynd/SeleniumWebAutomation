@@ -17,7 +17,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import com.opera.core.systems.OperaDriver;
 import seleniumwebautomation.util.Browser;
-import seleniumwebautomation.webdriver.AuthenticatedHtmlUnitDriver;
+//import seleniumwebautomation.webdriver.AuthenticatedHtmlUnitDriver;
 
 /*
  * Factory to instantiate a WebDriver object. It returns an instance of the driver (local invocation) or an instance of RemoteWebDriver
@@ -105,7 +105,7 @@ public class WebDriverFactory {
 			capability = DesiredCapabilities.iphone();
 		} else {
 
-			capability = DesiredCapabilities.htmlUnit();
+			/*capability = DesiredCapabilities.htmlUnit();
 			// HTMLunit Check
 			if (username != null && password != null) {
 				webDriver = (HtmlUnitDriver) AuthenticatedHtmlUnitDriver
@@ -114,7 +114,7 @@ public class WebDriverFactory {
 				webDriver = new HtmlUnitDriver(true);
 			}
 
-			return webDriver;
+			return webDriver;*/
 		}
 
 		capability = setVersionAndPlatform(capability, browser.getVersion(),
@@ -181,18 +181,17 @@ public class WebDriverFactory {
 
     } else {
 
-			// HTMLunit Check
+			/*// HTMLunit Check
 			if (username != null && password != null) {
 				webDriver = (HtmlUnitDriver) AuthenticatedHtmlUnitDriver
 						.create(username, password);
 			} else {
 				webDriver = new HtmlUnitDriver(true);
-			}
+			}*/
 		}
 
 		return webDriver;
 	}
-
 	/*
 	 * Helper method to set version and platform for a specific browser
 	 * 

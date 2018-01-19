@@ -54,7 +54,6 @@ public class TestBase {
 				password);
 		webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
-
 	@AfterSuite(alwaysRun = true)
 	public void tearDown() {
 		if (webDriver != null) {

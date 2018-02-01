@@ -32,6 +32,7 @@ public class LoginPageTest {
         System.setProperty("webdriver.gecko.driver", "C:/geckodriver-v0.19.0-win64/geckodriver.exe");
 
         driver = new FirefoxDriver();
+        driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 

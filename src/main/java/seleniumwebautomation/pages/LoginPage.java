@@ -24,7 +24,10 @@ public class LoginPage extends Page {
     @FindBy(how = How.ID, using = "user_password")
     private WebElement userPassword;
 
-    @FindBy(how = How.CLASS_NAME, using = "header-nav__link")
+    //@FindBy(how = How.CLASS_NAME, using = "header-nav__link")
+    //private WebElement loginPageText;
+    //This locator works for me
+    @FindBy(xpath = "//*[@id=\"wrap\"]/header/div/div[2]/nav/ul[1]/li/a")
     private WebElement loginPageText;
 
     @FindBy(how = How.CLASS_NAME, using = "my-account")
